@@ -1,0 +1,1 @@
+ drush sql-dump --result-file=sql/db.sql
