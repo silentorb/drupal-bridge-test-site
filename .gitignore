@@ -1,2 +1,3 @@
 sites/all/modules/custom
 sites/default/settings.php
+test/nodejs/node_modules

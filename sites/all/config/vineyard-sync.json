@@ -1,0 +1,61 @@
+{
+  "server": {
+    "url": "localhost:3000",
+    "user":       {
+      "name": "cj",
+      "pass": "pass"
+    }
+  },
+  "entities": {
+    "node": {
+      "name": "resource",
+      "properties": {
+        "nid": {
+          "name": "id"
+        },
+        "title": {
+          "name": "name"
+        }
+      }
+    },
+    "character": {
+      "parent":"node"
+    },
+    "user": {
+      "properties": {
+        "uid": {
+          "name": "id"
+        },
+        "name": {
+          "name": "username"
+        },
+        "email": {
+
+        }
+      }
+    },
+    "generic": {
+      "properties": {
+        "id": {
+
+        },
+        "title": {
+          "name": "name"
+        }
+      }
+    }
+  },
+  "trellises": {
+    "resource": {
+      "identities": [ "id" ],
+      "properties": {
+        "id": {
+          "type": "int"
+        },
+        "name": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
